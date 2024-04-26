@@ -29,7 +29,7 @@ if(age >= 18){
                                         //  Start Day16
 // =>String Methods:
 // String is immutable(don't change)
-// mehtods don't change the original string 
+// methods don't change the original string 
 let msg = "     Hello World    ";
 console.log(msg.trim());
 // trim() only remove front and end space of the String in the above example it don't remove space between Hello world
