@@ -1,6 +1,6 @@
 //==> DOM ( Document Object Model )
 // The DOM Represents a document with a logical Tree.
-// It allow us to Manipulate/ change webpage content (HTML elements).
+// It allow us to Manipulate/ change webpage content (HTML or css elements).
 
 // ==> Selecting Element
 // In Select Element By Class Name and Tag Name we use indexing.
@@ -37,6 +37,7 @@ let heading = document.querySelector('h1');
 heading.style.color= 'purple';
 
 let brights = document.querySelector("#DataScience b");
+// These styles are saved in Inline CSS
 // for (let index = 0; index < bright.length; index++) {
 //     bright[index].style.color="orange";
 // }
@@ -45,8 +46,14 @@ let brights = document.querySelector("#DataScience b");
 // }
 brights.style.color = 'purple';
 
+// brights.style (this style give us inline css, if we write css in External File it dont show in this stile, that's why we don't use it frequently.)
 
 // ==> To check the classes of the Object:
 // obj.classlist
 let ims= document.querySelector("firstImg");
 ims.classList;
+ims.classList.add("green"); // this green class is create in css file
+ims.classList.remove("green");
+ims.setAttribute('class', 'green');  // it also work
+ims.classList.contains("underline"); // contains check this class is present or not with this
+ims.classList.toggle("green"); //To toggle b/w add and remove (if this class is present then it remove this class if not present then it add)
