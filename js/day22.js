@@ -57,3 +57,24 @@ ims.classList.remove("green");
 ims.setAttribute('class', 'green');  // it also work
 ims.classList.contains("underline"); // contains check this class is present or not with this
 ims.classList.toggle("green"); //To toggle b/w add and remove (if this class is present then it remove this class if not present then it add)
+
+
+// => Navigation
+// 1) parentElement
+// 2) children
+// 3) previousElementSibling / nextElementSibling
+// by using navigation you can change the style or content of our page
+let navigate = document.querySelector("navigate");
+navigate.parentElement;                    // show the parent element
+navigate.previousElementSibling;          // show the previous sibling
+navigate.childElementCount;               // count the child
+navigate.nextElementSibling;              // show the next sibling 
+
+
+// => Adding Element in Document:
+//document.createElement('Element that you want');
+
+let newP = document.querySelector('p');
+newP.innerText= 'Hi Iam Inner Text';
+let body = document.querySelector('body');
+body.appendChild(newP);
