@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo APP</title>
+    <style>
+        .toDoTable, thead th, tbody td{
+            border: 1px solid black;
+        }
+        .toDoTable{
+            width: 80%;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table id="todotable" class="toDoTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>hd</td>
+                    <td>fds</td>
+                </tr>
+                <tr>
+                    <td>hd</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button>Add</button>
+    <button>Update</button>
+    <button>Delete</button>
+    <button>Delete All</button>
+
+    <script>
+        function addNew(){
+            let newText = document.querySelector('p');
+            newText.innerText= prompt("Text that you want to Add.");
+            let addText = document.querySelector('tr');
+            
+        }
+    </script>
+</body>
+</html>
