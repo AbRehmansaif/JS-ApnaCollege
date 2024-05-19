@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <style>
+        .box, .secBox{
+            border: 1px solid black;
+            border-radius: 3px;
+            height: 40px;
+            background-color: rgb(227, 223, 217);
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div>
         <!-- <button onclick="alert('click btn')">Click Here!</button> -->
         <button>Click Here!</button>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, corporis!</p>
     </div>
+    <div class="box"></div>
+    
+    <div class="secBox" id="ssec">Second Box</div>
+    <button id="secBtn">Button</button>
+    <input type="text">
+
+
+    <!-- <form action="/action">
+        <input type="text">
+        <button>Submit</button>
+    </form> -->
+
+    <form action="/action">
+        <input id="user" type="text" placeholder="username">
+        <input id="pass" type="password">
+        <button>Register</button>
+    </form>
     <script src="js/day23.js"></script>
 </body>
 </html>
